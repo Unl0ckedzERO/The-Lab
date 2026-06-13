@@ -1,7 +1,8 @@
 # Audit Space Architecture
 
 Date created: 2026-05-30  
-Scope: How to separate messy intake, maturing ideas, tool/workflow experiments, and meta-system design.
+Updated: 2026-06-13  
+Scope: How to separate messy intake, maturing ideas, tool/workflow experiments, and meta-system design inside The Lab.
 
 ## Core Principle
 
@@ -33,11 +34,11 @@ It was also structural clutter because it shifted the chat away from its origina
 
 Conclusion: this type of branch should be allowed to happen temporarily, but once it matures, it should be moved out.
 
-## Recommended Zone Model
+## Final Zone Model
 
 Use four zones:
 
-### 1. Intake Zone
+### 1. Intake
 
 Purpose:
 
@@ -52,7 +53,11 @@ Properties:
 - no heavy implementation
 - no long-term project ownership
 
-### 2. Incubation / Lab Zone
+Default chat:
+
+`Intake — Reels, Tools, Ideas`
+
+### 2. Incubator
 
 Purpose:
 
@@ -66,6 +71,10 @@ Examples:
 - testing a new tool category
 - building a repeatable audit method
 - exploring a business concept that is promising but not ready for its own project
+
+Default chat:
+
+`Incubator — Validated Ideas + Tool Tests`
 
 ### 3. Project Zone
 
@@ -81,33 +90,31 @@ Examples:
 - resume workflows -> relevant resume project
 - AI course/course mirror work -> AI course project
 
-### 4. Meta-System Zone
+### 4. Framework
 
 Purpose:
 
-- discuss and improve the framework itself
+- discuss and improve The Lab itself
 - make decisions about chat/project architecture
 - define routing rules and thresholds
 
 This prevents framework discussion from cluttering raw intake.
 
-## Recommended Chat Layout
+Default chat:
 
-Minimal version:
+`Framework — Audit System Design`
 
-1. Opportunity / Tool Intake
-2. Opportunity Lab / Incubator
-3. Audit System / Framework
+### 5. Archive
 
-Expanded version:
+Purpose:
 
-1. Business + Workflow Opportunity Intake
-2. Lifestyle / Shopping / Education Intake
-3. AI / Tool / Prompting Intake
-4. Opportunity Lab / Incubator
-5. Audit System / Framework
+- preserve historical mixed context
+- reference prior decisions and tests
+- avoid using old mixed chats as clean future intake
 
-Recommendation: start minimal. Add more intake chats only when volume justifies it.
+Default chat:
+
+`Archive — Audit Lab v0 / Mixed Chat`
 
 ## Routing Thresholds
 
@@ -122,7 +129,7 @@ Move an item out of Intake when at least two of these are true:
 - the idea/tool could affect an existing project
 - it needs tracking, scoring, or versioning
 
-Move an item from Lab to a Project when:
+Move an item from Incubator to a Project when:
 
 - there is a clear project home
 - it needs durable implementation
@@ -145,7 +152,7 @@ Use cross-feed notes:
 
 - New item arrives in Intake.
 - If it relates to an incubated idea/project, create a short handoff note.
-- Add the note to the Lab or Project space.
+- Add the note to the Incubator or Project space.
 - Do not reopen broad implementation work inside Intake unless necessary.
 
 ## GitHub's Role
@@ -170,34 +177,40 @@ Git is not enough for:
 
 Therefore, Git should support the architecture, not replace separate chats/projects.
 
-## Naming Suggestions
+## Naming Standard
 
-Possible chat/project names:
+Project:
 
-- `Opportunity Intake`
-- `Tool + Workflow Intake`
-- `Opportunity Lab`
-- `Audit Framework / System Design`
-- `Scraper Audit`
-- `Business Idea Incubator`
+`The Lab`
+
+Repo:
+
+`Unl0ckedzERO/The-Lab`
+
+Core chats:
+
+- `Intake — Reels, Tools, Ideas`
+- `Incubator — Validated Ideas + Tool Tests`
+- `Framework — Audit System Design`
+- `Archive — Audit Lab v0 / Mixed Chat`
 
 ## Current Recommendation
 
-Keep the current chat as a historical `Audit Lab v0` or `Scraper/Opportunity Audit Lab` because it already contains mixed but useful context.
+Keep the current mixed chat as a historical archive because it already contains useful context.
 
 Create a cleaner future intake space for new reels/posts/tools.
 
 Move the Apify-to-Sheets work into the Job Search project.
 
-Use a separate framework/system chat for questions about the architecture itself.
+Use a separate Framework chat for questions about The Lab architecture itself.
 
 ## Practical Operating Rule
 
 Every mature thread should answer:
 
-1. Is this still intake?
-2. Is this an incubation/lab branch?
-3. Does it belong to an existing project?
+1. Is this still Intake?
+2. Is this an Incubator branch?
+3. Does it belong to an existing Project?
 4. Does it need its own project/chat?
 5. Should it be archived as a pattern?
 
