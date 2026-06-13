@@ -1,29 +1,33 @@
 # Opportunity + Tool Audit Router
 
 Date created: 2026-05-26  
-Scope: Reels/business opportunity audit, tool audit, scraper/API workflow, and project handoff routing.
+Updated: 2026-06-13  
+Scope: Reels/business opportunity audit, tool audit, scraper/API workflow, and project handoff routing inside The Lab.
 
 ## Why This Exists
 
-This chat began as an Instagram/Reels business opportunity audit and evolved into a broader testing space for tools, scrapers, APIs, and workflows that can support multiple projects. Without routing, serious ideas, hype content, tool experiments, and implementation work can blend together and reduce clarity.
+The original mixed audit chat began as an Instagram/Reels business opportunity audit and evolved into a broader testing space for tools, scrapers, APIs, and workflows that can support multiple projects. Without routing, serious ideas, hype content, tool experiments, and implementation work can blend together and reduce clarity.
 
-This router keeps the chat useful as an intake/lab while preventing mature ideas from staying trapped in a noisy discovery thread.
+This router keeps The Lab useful as an intake/incubation system while preventing mature ideas from staying trapped in a noisy discovery thread.
 
 ## Recommended Structure
 
 Use a hybrid model:
 
-1. Keep this chat or a future project as an intake/lab for opportunity and tool audits.
-2. Keep GitHub as the sanitized evidence/workflow ledger.
-3. Move mature implementation work into the relevant project/chat.
+1. Keep `Intake — Reels, Tools, Ideas` as the clean intake space.
+2. Use `Incubator — Validated Ideas + Tool Tests` for promising ideas/tools with no clear project home yet.
+3. Use `Framework — Audit System Design` for routing, naming, and process architecture.
+4. Use `Archive — Audit Lab v0 / Mixed Chat` for historical context.
+5. Keep GitHub as the sanitized evidence/workflow ledger.
+6. Move mature implementation work into the relevant project/chat.
 
 Examples:
 
 - Job-search implementation -> Job Search project
 - Trading strategy/testing -> Trading project
 - Resume/job-candidate workflows -> relevant resume project
-- Tool/scraper evaluation -> Scraper Audit repo and audit chat/project
-- Business opportunity experiments -> dedicated chat/project only after passing triage
+- Tool/scraper evaluation -> The Lab repo and Incubator/Framework as appropriate
+- Business opportunity experiments -> Incubator or dedicated project after passing triage
 
 ## Intake Categories
 
@@ -36,6 +40,8 @@ Incoming items should be tagged as one or more of:
 - Market signal / trend
 - Content strategy idea
 - Project-specific implementation idea
+- Shopping / lifestyle / education idea
+- AI prompting / workflow idea
 - Low-value/hype archive
 
 ## Routing Stages
@@ -110,6 +116,7 @@ Outcome categories:
 - Pattern bank: weak alone, useful as part of a larger pattern
 - Watchlist: promising source or trend, not actionable yet
 - Tool stack: adopt/test as workflow support
+- Incubator: promising but no clear existing project home yet
 - Project handoff: move into a specific project/chat
 - Dedicated experiment: create a new chat/project/Git branch/sheet
 
@@ -191,23 +198,32 @@ The biggest risk is scope blending: a noisy intake chat can start carrying imple
 
 ## Recommended Operating Model
 
-This chat/project should act as:
+The Lab should support:
 
 - intake
 - triage
 - evidence gathering
 - early scoring
 - tool evaluation
+- incubation
 - handoff creation
+- framework refinement
 
 It should not become the permanent home for:
 
 - full job-search implementation
 - trading strategy development
 - resume project implementation
-- mature business experiments
+- mature business experiments with a dedicated project home
 - raw data dumps
 
 ## Current Decision
 
-Keep the broad audit/chat scope for now, but add routing discipline. Use GitHub for sanitized logs and workflows. Move implementation work into the target project as soon as a tool or idea becomes actionable.
+Use The Lab with four core chat roles:
+
+- `Intake — Reels, Tools, Ideas`
+- `Incubator — Validated Ideas + Tool Tests`
+- `Framework — Audit System Design`
+- `Archive — Audit Lab v0 / Mixed Chat`
+
+Use GitHub repo `Unl0ckedzERO/The-Lab` for sanitized logs and workflows. Move implementation work into the target project as soon as a tool or idea becomes actionable.
