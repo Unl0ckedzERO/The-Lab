@@ -68,6 +68,12 @@ Search cues to try:
 | `README.md` | Repo overview | Lab purpose, core zones, routing stages, routing outcomes, logging rules, naming standard | start here, routing, zones, logging, naming |
 | `MANIFEST.md` | Discovery index | Finding relevant workflows, tests, handoffs, and framework rules without exact filenames | manifest, index, discovery, handoff, tests |
 
+### Incubator Handoffs
+
+| File | Stage | Summary | Verdict / Route | Search Tags |
+|---|---|---|---|---|
+| `handoffs/incubator_parse_indeed_search_table_experiment.md` | Incubator Handoff | Handoff for testing whether Parse's Indeed marketplace API can be revised or used differently to return clean job-card rows from search. | Continue as bounded Incubator test; move to Job Search only if Parse can produce clean, affordable rows competitive with Apify. | Parse, Indeed, Incubator, search rows, search_jobs_detailed, Apify comparison, job search handoff |
+
 ### Indeed / Job Search / Scraper Tests
 
 | File | Stage | Summary | Verdict / Route | Search Tags |
@@ -219,6 +225,8 @@ Examples:
 
 - `handoffs/2026-06-14_intake_to_incubator_parse_indeed_search_rows.md`
 - `handoffs/2026-06-14_incubator_to_job-search_apify_indeed_export.md`
+
+Existing pre-standard handoff files may remain in place if already referenced, but new handoffs should use the date-prefixed naming pattern.
 
 ### Framework Rules
 
