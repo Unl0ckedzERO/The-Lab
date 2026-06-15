@@ -80,20 +80,23 @@ Search cues to try:
 |---|---|---|---|---|
 | `tests/2026-05-26_parse_indeed_pipeline_assessment.md` | Evidence Pass / Audit | Parse Indeed API test covering `search_jobs` and `get_job_details`; search returned counts, related queries, pagination/context, and job keys, but not clean job-card rows. Detail endpoint returned usable records by job key. | Keep Parse as selective research probe, not primary sheet extractor. Compare against Apify/connected Indeed before adopting. | Parse, Indeed, search_jobs, get_job_details, job keys, row extraction, market sizing, detail endpoint |
 | `tests/2026-05-26_parse_indeed_montana_search_and_revision_hypothesis.md` | Evidence Pass / Audit | Montana `equipment operator` search via Parse; confirmed localized result counts, job keys, pagination, related queries, and missing clean row fields. Defines `search_jobs_detailed` revision hypothesis. | Selective discovery candidate. Do not spend on revision until Apify or another cleaner row-level extractor is tested. | Parse, Indeed, Montana, equipment operator, related queries, pagination, search_jobs_detailed, revision hypothesis |
-| `tests/2026-05-26_apify_borderline_indeed_results_evaluation.md` | Evidence Pass / Audit | Apify `borderline/indeed-scraper` returned 20 structured job records with title, company/source, location, job URL, descriptions, dates, job type, and salary for most records. | Strong success. Current best Indeed extraction candidate pending cost verification and one more controlled test. | Apify, borderline, Indeed scraper, clean rows, salary, apply URL, dataset, Google Sheets, job search |
+| `tests/2026-05-26_apify_borderline_indeed_results_evaluation.md` | Evidence Pass / Audit | Apify `borderline/indeed-scraper` returned 20 structured job records with title, company/source, location, job URL, descriptions, dates, job type, and salary for most records. | Strong success. Original cost certainty was pending; see 2026-06-14 Apify paid export evaluation for verified pricing and export-layer routing. | Apify, borderline, Indeed scraper, clean rows, salary, apply URL, dataset, Google Sheets, job search |
+| `tests/2026-06-14_apify_indeed_paid_export_layer_evaluation.md` | Incubator / Tool Stack | Apify `borderline/indeed-scraper` follow-up documenting verified `$0.005/job` pricing, 5-row/25-row/100-row runs, rich field coverage, export format guidance, and tool-stack routing. | Adopt as paid bulk export layer after connector/Parse triage; do not use for casual broad sweeps without narrowing. | Apify, Indeed, paid export, $5 per 1000 jobs, row extraction, connector comparison, Parse comparison, Google Sheets, JSON, CSV, Excel |
 
 ## Current Decision Index
 
 ### Parse vs Apify for Indeed Extraction
 
-Decision: Apify `borderline/indeed-scraper` is currently the stronger implementation candidate for clean row-level Indeed job extraction. Parse remains useful as a selective discovery or market-sizing probe when counts, related queries, pagination, and job keys are valuable.
+Decision: Apify `borderline/indeed-scraper` is currently the stronger implementation candidate for clean row-level Indeed job extraction when a paid export is justified. Parse remains useful as a selective discovery or market-sizing probe when counts, related queries, pagination, and job keys are valuable. The ChatGPT Indeed connector remains the default interactive review tool because it does not add external scraping cost.
 
 Rationale:
 
 - Parse search did not produce clean sheet-ready rows.
 - Parse detail calls require job keys and are too expensive for broad extraction if used on every result.
-- Apify produced structured row-level output in one run.
-- Apify still needs cost verification, duplicate testing, and controlled filter checks before becoming a stable job-search workflow component.
+- A Parse fork can normalize rows, but current evidence suggests it bills as search plus per-job detail cost.
+- The Indeed connector is strong for interactive search/review, but exposes a limited visible result set at a time.
+- Apify produced structured row-level output in one run and follow-up tests verified predictable pricing at `$0.005` per returned job (`$5 / 1,000 jobs`).
+- Apify should be used as a paid export layer only after a lane is narrow enough to justify cost.
 
 Use this decision when routing future Indeed scraper work:
 
