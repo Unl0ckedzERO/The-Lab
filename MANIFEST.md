@@ -70,8 +70,8 @@ When a user asks about prior Lab work:
 
 Search cues to try:
 
-- Tool names: `Parse`, `Apify`, `Firecrawl`, `Browserbase`, `Indeed`, `GovernmentJobs`
-- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`
+- Tool names: `Parse`, `Apify`, `Firecrawl`, `Browserbase`, `Indeed`, `GovernmentJobs`, `Instagram`
+- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`, `Reel intake`, `evidence bundle`
 - Project zones: `Intake`, `Incubator`, `Framework`, `Archive`
 - Outcome terms: `watchlist`, `tool stack`, `dedicated experiment`, `existing project handoff`, `pattern bank`
 
@@ -84,6 +84,12 @@ Search cues to try:
 | `README.md` | Repo overview | Lab purpose, core zones, routing stages, routing outcomes, logging rules, naming standard | start here, routing, zones, logging, naming |
 | `MANIFEST.md` | Discovery index | Finding relevant workflows, tests, handoffs, and framework rules without exact filenames | manifest, index, discovery, handoff, tests |
 | `framework/2026-06-15_active_lab_chat_map.md` | Framework / project architecture | Current active Lab chat structure and operating roles | active chats, chat map, Archive, Intake, Incubator, Framework, Indeed API Incubator, LLM Council Skill Incubator |
+
+### Framework Standards / Rules
+
+| File | Stage | Summary | Verdict / Route | Search Tags |
+|---|---|---|---|---|
+| `framework/2026-06-17_instagram_reel_intake_evidence_standard.md` | Framework / Intake Evidence Standard | Defines evidence tiers and fields Intake should ideally capture for Instagram Reels before routing to Evidence Pass, Incubator, Tool Stack, or project handoff. | Use as target standard for the future Instagram scraper/workflow Incubator test; does not choose a scraper by itself. | Instagram, Reel, Reels, short-form video, Intake evidence, screen recording, Apify, scraper, comments, creator metadata, engagement, legitimacy, evidence bundle |
 
 ### Incubator Handoffs
 
