@@ -76,8 +76,8 @@ When a user asks about prior Lab work:
 
 Search cues to try:
 
-- Tool names: `Parse`, `Apify`, `Firecrawl`, `Browserbase`, `Indeed`, `GovernmentJobs`, `Instagram`
-- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`, `Reel intake`, `evidence bundle`, `tool stack`
+- Tool names: `Parse`, `Apify`, `Firecrawl`, `Browserbase`, `Indeed`, `GovernmentJobs`, `Instagram`, `Airtable`, `Obsidian`, `Notion`, `Cognee`, `MemPalace`
+- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`, `Reel intake`, `evidence bundle`, `tool stack`, `memory layer`, `organization layer`, `structured tracker`, `agent memory`
 - Project zones: `Intake`, `Incubator`, `Framework`, `Archive`, `Job Search`
 - Outcome terms: `watchlist`, `tool stack`, `dedicated experiment`, `existing project handoff`, `pattern bank`, `closeout`
 
@@ -106,6 +106,7 @@ Search cues to try:
 | `handoffs/2026-06-17_framework_to_incubator_instagram_reel_scraper_intake_evidence_test.md` | Framework → Incubator Handoff | Original handoff for testing Apify Instagram/Reels scrapers and hybrid workflows against the Instagram Reel Intake evidence standard. | Completed; see closeout test and Incubator → Intake handoff for adopted upload path. | Instagram, Reel, Apify, scraper, Intake evidence, screen recording, comments, creator metadata, engagement, legitimacy, Framework, Incubator |
 | `handoffs/2026-06-17_incubator_to_intake_instagram_reel_upload_path.md` | Incubator → Intake Handoff | Handoff for the proven Instagram Reel upload path using cheap scrape output, local `whisper.cpp`, and upload-ready ZIP bundles. | Adopt for Intake when a Reel scrape is justified; return to Incubator only for workflow fixes or replacement tests. | Instagram, Reel, Intake, Apify, whisper.cpp, transcript, upload bundle, ZIP, Raw Reels, Refined Reels, scraper workflow |
 | `handoffs/2026-06-27_incubator_to_job_search_parse_indeed_api_tool_stack.md` | Incubator → Job Search Handoff | Handoff for the adopted layered Indeed data-source stack: connector for interactive review, Parse rich compact rows, selective Parse details, and Apify rich exports. | Adopt for Job Search; reopen Incubator only for major source, pricing, endpoint, or output-shape changes. | Indeed, Parse, Apify, connector, Job Search, rich_compact_v3, search_jobs_rows, tool stack, handoff, closeout |
+| `handoffs/2026-06-29_intake_to_incubator_memory_organization_layer_evaluation.md` | Intake → Incubator Handoff | Handoff for comparing GitHub-only, Airtable, Obsidian, Notion, Cognee, and MemPalace as memory/organization support layers for retrieval, structured tracking, and future agent workflows. | Start as bounded Incubator comparison; GitHub remains the durable ledger unless Framework later changes that. | memory layer, organization layer, Airtable, Obsidian, Notion, Cognee, MemPalace, agent memory, structured tracker, source of truth, Incubator |
 
 ### Indeed / Job Search / Scraper Tests
 
@@ -219,137 +220,3 @@ Can [tool/workflow/idea] do [specific useful outcome] better/cheaper/faster/more
 ## Routing After Test
 
 - If successful:
-- If mixed:
-- If failed:
-
-## Sanitization Notes
-
-Do not commit raw datasets, signed/private links, API keys, credentials, sensitive metadata, or unredacted API responses.
-```
-
-## Test Log Standard
-
-Use this structure for new test files in `tests/`:
-
-```md
-# [Tool] Test — [Short Outcome-Oriented Name]
-
-Date: YYYY-MM-DD
-Zone: Intake / Incubator / Framework / Archive
-Tool or Source:
-Test Type: API / Scraper / Workflow / Prompt / Business / Data Source / Other
-Raw Data Stored: No — only sanitized summary and evaluation are committed.
-
-## Question
-
-What was this test trying to prove or disprove?
-
-## Setup
-
-- Inputs:
-- Parameters:
-- Baseline or comparison:
-- Cost constraints:
-
-## Results
-
-- [Observed result]
-- [Observed result]
-- [Observed result]
-
-## Field / Output Coverage
-
-| Field / Output | Result | Notes |
-|---|---|---|
-| Example | Present / Missing / Partial | Short note |
-
-## Evaluation
-
-What worked, what failed, and what is still unknown?
-
-## Verdict
-
-Reject / Archive / Watchlist / Tool Stack / Incubator / Existing Project Handoff / Dedicated Experiment
-
-## Next Step
-
-One clear next action, or `None` if closed.
-```
-
-## Naming Standard for New Files
-
-Prefer names that can be understood without opening the file.
-
-### Tests
-
-`tests/YYYY-MM-DD_tool_or_source_short_test_name.md`
-
-Examples:
-
-- `tests/2026-05-26_parse_indeed_pipeline_assessment.md`
-- `tests/2026-05-26_apify_borderline_indeed_results_evaluation.md`
-
-### Handoffs
-
-`handoffs/YYYY-MM-DD_source_to_target_short_name.md`
-
-Examples:
-
-- `handoffs/2026-06-14_intake_to_incubator_parse_indeed_search_rows.md`
-- `handoffs/2026-06-14_incubator_to_job-search_apify_indeed_export.md`
-
-Handoffs should stay flat in `handoffs/`; do not create direction-only subfolders unless a future large-scale cleanup specifically reintroduces them.
-
-### Framework Rules
-
-`framework/YYYY-MM-DD_short_rule_or_rubric_name.md`
-
-Examples:
-
-- `framework/2026-06-14_scraper_test_routing_thresholds.md`
-- `framework/2026-06-14_tool_stack_adoption_rubric.md`
-
-## Maintenance Template for This Manifest
-
-When adding a new file, append one short row to the most relevant section:
-
-```md
-| `path/to/file.md` | Stage or Type | One-sentence summary | Verdict / Route | Search tags |
-```
-
-Good search tags include:
-
-- tool name
-- source name
-- workflow type
-- project area
-- routing outcome
-- key decision words
-- common aliases or user phrasing
-
-## Backfill Queue
-
-Use this section for known or suspected prior files that should be indexed later.
-
-| Topic | Likely Area | Why Backfill |
-|---|---|---|
-| Parse GovernmentJobs / City of Billings test | Tests / Tool Stack | Early Parse proof may be relevant for future government-job scraper or API tests. |
-| Scraper Audit naming transition | Framework / Archive | Older notes may still refer to `Scraper-Audit`; index useful files under current `The Lab` naming. |
-| Firecrawl / Browserbase / Apify comparison notes | Tests / Framework | Needed for future tool-stack decisions and scraper-routing rules. |
-| Intake prompt/rubric rules | Framework | Useful for making first-pass audits consistent without overbuilding weak ideas. |
-
-## Sanitization Reminder
-
-The repo should contain sanitized summaries, decisions, workflows, handoffs, rubrics, and test evaluations.
-
-Do not commit:
-
-- raw datasets
-- signed/private links
-- API keys
-- credentials
-- sensitive metadata
-- unredacted API responses
-- private user records that are not necessary for reusable workflow design
-
-When in doubt, summarize the result and describe the source type instead of preserving raw content.
