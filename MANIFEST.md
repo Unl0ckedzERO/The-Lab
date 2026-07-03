@@ -2,7 +2,7 @@
 
 Purpose: make The Lab repo easier for future chats to navigate without requiring exact filenames.
 
-Use this file as the first stop when a chat needs to find relevant workflows, handoffs, tests, decisions, routing rules, naming rules, or sanitized experiment evidence.
+Use this file as the first stop when a chat needs to find relevant workflows, handoffs, decisions, routing rules, naming rules, or sanitized experiment evidence.
 
 This is a curated index, not a raw data store. Keep entries short, searchable, and sanitized.
 
@@ -77,8 +77,8 @@ When a user asks about prior Lab work:
 
 Search cues to try:
 
-- Tool names: `Parse`, `Apify`, `Firecrawl`, `Browserbase`, `Indeed`, `GovernmentJobs`, `Instagram`, `Airtable`, `Obsidian`, `Notion`, `Cognee`, `MemPalace`
-- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`, `Reel intake`, `evidence bundle`, `tool stack`, `memory layer`, `organization layer`, `structured tracker`, `agent memory`
+- Tool names: `Parse`, `Apify`, `Firecrawl`, `Browserbase`, `Indeed`, `GovernmentJobs`, `Instagram`, `Airtable`, `Obsidian`, `Notion`, `Cognee`, `MemPalace`, `Whop`, `Content Rewards`, `Bounty`, `Cryo.ai`
+- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`, `Reel intake`, `evidence bundle`, `tool stack`, `memory layer`, `organization layer`, `structured tracker`, `agent memory`, `clipping`, `AI-assisted clipping`, `creator economy`
 - Project zones: `Intake`, `Incubator`, `Framework`, `Archive`, `Job Search`
 - Outcome terms: `watchlist`, `tool stack`, `dedicated experiment`, `existing project handoff`, `pattern bank`, `closeout`
 
@@ -108,6 +108,7 @@ Search cues to try:
 | `handoffs/2026-06-17_incubator_to_intake_instagram_reel_upload_path.md` | Incubator → Intake Handoff | Handoff for the proven Instagram Reel upload path using cheap scrape output, local `whisper.cpp`, and upload-ready ZIP bundles. | Adopt for Intake when a Reel scrape is justified; return to Incubator only for workflow fixes or replacement tests. | Instagram, Reel, Intake, Apify, whisper.cpp, transcript, upload bundle, ZIP, Raw Reels, Refined Reels, scraper workflow |
 | `handoffs/2026-06-27_incubator_to_job_search_parse_indeed_api_tool_stack.md` | Incubator → Job Search Handoff | Handoff for the adopted layered Indeed data-source stack: connector for interactive review, Parse rich compact rows, selective Parse details, and Apify rich exports. | Adopt for Job Search; reopen Incubator only for major source, pricing, endpoint, or output-shape changes. | Indeed, Parse, Apify, connector, Job Search, rich_compact_v3, search_jobs_rows, tool stack, handoff, closeout |
 | `handoffs/2026-06-29_intake_to_incubator_memory_organization_layer_evaluation.md` | Intake → Incubator Handoff | Handoff for comparing GitHub-only, Airtable, Obsidian, Notion, Cognee, and MemPalace as memory/organization support layers for retrieval, structured tracking, and future agent workflows. | Start as bounded Incubator comparison; GitHub remains the durable ledger unless Framework later changes that. | memory layer, organization layer, Airtable, Obsidian, Notion, Cognee, MemPalace, agent memory, structured tracker, source of truth, Incubator |
+| `handoffs/2026-07-03_intake_to_incubator_ai_assisted_clipping_workflows.md` | Intake → Incubator Handoff | Handoff for testing AI-assisted clipping workflows, tools, platforms, strategies, and real-world results as digital deliverables. | Start with platform audit and risk checklist before posting; Whop / Content Rewards is the first suggested surface. | clipping, AI-assisted clipping, Whop, Content Rewards, Bounty, Cryo.ai, creator economy, campaign audit, Incubator |
 
 ### Indeed / Job Search / Scraper Tests
 
@@ -116,7 +117,7 @@ Search cues to try:
 | `tests/2026-05-26_parse_indeed_pipeline_assessment.md` | Evidence Pass / Audit | Parse Indeed API test covering `search_jobs` and `get_job_details`; search returned counts, related queries, pagination/context, and job keys, but not clean job-card rows. Detail endpoint returned usable records by job key. | Keep Parse as selective research probe, not primary sheet extractor. Compare against Apify/connected Indeed before adopting. | Parse, Indeed, search_jobs, get_job_details, job keys, row extraction, market sizing, detail endpoint |
 | `tests/2026-05-26_parse_indeed_montana_search_and_revision_hypothesis.md` | Evidence Pass / Audit | Montana `equipment operator` search via Parse; confirmed localized result counts, job keys, pagination, related queries, and missing clean row fields. Defines `search_jobs_detailed` revision hypothesis. | Selective discovery candidate; superseded by later Parse row endpoint refinements for table-ready output. | Parse, Indeed, Montana, equipment operator, related queries, pagination, search_jobs_detailed, revision hypothesis |
 | `tests/2026-05-26_apify_borderline_indeed_results_evaluation.md` | Evidence Pass / Audit | Apify `borderline/indeed-scraper` returned 20 structured job records with title, company/source, location, job URL, descriptions, dates, job type, and salary for most records. | Strong success. Original cost certainty was pending; see 2026-06-14 Apify paid export evaluation for verified pricing and export-layer routing. | Apify, borderline, Indeed scraper, clean rows, salary, apply URL, dataset, Google Sheets, job search |
-| `tests/2026-06-14_apify_indeed_paid_export_layer_evaluation.md` | Incubator / Tool Stack | Apify `borderline/indeed-scraper` follow-up documenting verified `$0.005/job` pricing, 5-row/25-row/100-row runs, rich field coverage, export format guidance, and tool-stack routing. | Adopt as paid bulk export layer after connector/Parse triage; do not use for casual broad sweeps without narrowing. | Apify, Indeed, paid export, $5 per 1000 jobs, row extraction, connector comparison, Parse comparison, Google Sheets, JSON, CSV, Excel |
+| `tests/2026-06-14_apify_indeed_paid_export_layer_evaluation.md` | Incubator / Tool Stack | Apify `borderline/indeed-scraper` follow-up documenting verified `$0.005/job` pricing, 5-row/25-row/100-row runs, rich field coverage, and tool-stack routing. | Adopt as paid bulk export layer after connector/Parse triage; do not use for casual broad sweeps without narrowing. | Apify, Indeed, paid export, $5 per 1000 jobs, row extraction, connector comparison, Parse comparison, Google Sheets, JSON, CSV, Excel |
 | `tests/2026-06-27_parse_indeed_api_incubator_closeout.md` | Incubator / Tool Stack | Closeout for the Parse / Indeed API Incubator, documenting the adopted layered Job Search tool stack. | Adopt layered stack for Job Search; close Indeed API Incubator for now. | Parse, Indeed, API, Incubator, closeout, rich_compact_v3, search_jobs_rows, Apify, connector, Job Search tool stack |
 
 ### Instagram / Reel Intake / Scraper Tests
