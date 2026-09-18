@@ -68,9 +68,9 @@ When a user asks about prior Lab work:
 
 Search cues:
 
-- Tool names: `Parse`, `Apify`, `Firecrawl`, `Browserbase`, `Indeed`, `GovernmentJobs`, `Instagram`, `Airtable`, `Obsidian`, `Notion`, `Cognee`, `MemPalace`, `Whop`, `Content Rewards`, `Bounty`, `Cryo.ai`
-- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`, `Reel intake`, `evidence bundle`, `tool stack`, `memory layer`, `organization layer`, `structured tracker`, `agent memory`, `clipping`, `AI-assisted clipping`, `creator economy`, `campaign audit`
-- Project zones: `Intake`, `Incubator`, `Framework`, `Archive`, `Job Search`
+- Tool names: `Parse`, `Apify`, `Firecrawl`, `Browserbase`, `Indeed`, `GovernmentJobs`, `Instagram`, `Airtable`, `Obsidian`, `Notion`, `Cognee`, `MemPalace`, `Whop`, `Content Rewards`, `Bounty`, `Cryo.ai`, `CloddsBot`
+- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`, `Reel intake`, `evidence bundle`, `tool stack`, `memory layer`, `organization layer`, `structured tracker`, `agent memory`, `clipping`, `AI-assisted clipping`, `creator economy`, `campaign audit`, `AI trading terminal`, `trading agent`, `MCP trading`, `repo-only audit`
+- Project zones: `Intake`, `Incubator`, `Framework`, `Archive`, `Job Search`, `Trading`
 - Outcome terms: `watchlist`, `tool stack`, `dedicated experiment`, `existing project handoff`, `pattern bank`, `closeout`
 
 ## Current File Map
@@ -100,6 +100,12 @@ Search cues:
 | `handoffs/2026-06-27_incubator_to_job_search_parse_indeed_api_tool_stack.md` | Incubator → Job Search Handoff | Handoff for the adopted layered Indeed data-source stack. | Adopt for Job Search; reopen Incubator only for major source, pricing, endpoint, or output-shape changes. | Indeed, Parse, Apify, connector, Job Search, tool stack, handoff, closeout |
 | `handoffs/2026-06-29_intake_to_incubator_memory_organization_layer_evaluation.md` | Intake → Incubator Handoff | Handoff for comparing GitHub-only, Airtable, Obsidian, Notion, Cognee, and MemPalace as memory/organization support layers. | Start as bounded Incubator comparison; GitHub remains the durable ledger unless Framework later changes that. | memory layer, organization layer, Airtable, Obsidian, Notion, Cognee, MemPalace, agent memory, Incubator |
 | `handoffs/2026-07-03_intake_to_incubator_ai_assisted_clipping_workflows.md` | Intake → Incubator Handoff | Handoff for testing AI-assisted clipping workflows, tools, platforms, strategies, and real-world results as digital deliverables. | Start with platform audit and risk checklist before posting; Whop / Content Rewards is the first suggested surface. | clipping, AI-assisted clipping, Whop, Content Rewards, Bounty, Cryo.ai, creator economy, campaign audit, Incubator |
+
+### Existing Project Handoffs
+
+| File | Stage | Summary | Verdict / Route | Search Tags |
+|---|---|---|---|---|
+| `handoffs/2026-09-18_intake_to_trading_cloddsbot_ai_trading_terminal.md` | Intake → Trading Project Handoff | Handoff for repo-only inspection of `alsk1992/CloddsBot`, a high-risk AI trading terminal covering prediction markets, crypto, futures, MCP, wallets, and automation. | Inspect statically before installing; no live wallets, exchange keys, private keys, messaging bots, or MCP full access. Evaluate whether read-only/dry-run mode is technically enforceable. | CloddsBot, AI trading terminal, trading agent, prediction markets, crypto, futures, MCP, dry-run, repo-only audit, Trading |
 
 ### Indeed / Job Search / Scraper Tests
 
