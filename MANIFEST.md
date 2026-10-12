@@ -82,7 +82,7 @@ Search cues:
 |---|---|---|---|
 | `README.md` | Repo overview | Lab purpose, core zones, routing stages, routing outcomes, logging rules, naming standard | start here, routing, zones, logging, naming |
 | `MANIFEST.md` | Discovery index | Finding relevant workflows, tests, handoffs, and framework rules without exact filenames | manifest, index, discovery, handoff, tests |
-| `framework/2026-06-15_active_lab_chat_map.md` | Framework / project architecture | Current active and concluded Lab chat structure and operating roles | active chats, concluded chats, chat map, Archive, Intake, Incubator, Framework, LLM Council Skill Incubator, Memory Organization Layer Evaluation Incubator, AI-Assisted Clipping Incubator, Instagram Reel Scraper Incubator, Indeed API Incubator |
+| `framework/2026-06-15_active_lab_chat_map.md` | Framework / project architecture | Current active and concluded Lab chat structure and operating roles | active chats, concluded chats, chat map, Archive, Intake, Incubator, Framework, LLM Council Skill Incubator, Memory Organization Layer Evaluation Incubator, AI-Assisted Clipping Incubator, Incubator Reel Estate, Instagram Reel Scraper Incubator, Indeed API Incubator |
 
 ### Framework Standards / Rules
 
