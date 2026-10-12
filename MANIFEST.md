@@ -69,7 +69,7 @@ When a user asks about prior Lab work:
 Search cues:
 
 - Tool names: `Parse`, `Apify`, `Firecrawl`, `Browserbase`, `Indeed`, `GovernmentJobs`, `Instagram`, `Airtable`, `Obsidian`, `Notion`, `Cognee`, `MemPalace`, `Whop`, `Content Rewards`, `Bounty`, `Cryo.ai`, `CloddsBot`
-- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`, `Reel intake`, `evidence bundle`, `tool stack`, `memory layer`, `organization layer`, `structured tracker`, `agent memory`, `clipping`, `AI-assisted clipping`, `creator economy`, `campaign audit`, `AI trading terminal`, `trading agent`, `MCP trading`, `repo-only audit`
+- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`, `Reel intake`, `evidence bundle`, `tool stack`, `memory layer`, `organization layer`, `structured tracker`, `agent memory`, `clipping`, `AI-assisted clipping`, `creator economy`, `campaign audit`, `AI trading terminal`, `trading agent`, `MCP trading`, `repo-only audit`, `pattern synthesis`, `cross-lane synthesis`, `concept sweep`, `recurring lane`
 - Project zones: `Intake`, `Incubator`, `Framework`, `Archive`, `Job Search`, `Trading`
 - Outcome terms: `watchlist`, `tool stack`, `dedicated experiment`, `existing project handoff`, `pattern bank`, `closeout`
 
@@ -88,6 +88,7 @@ Search cues:
 | File | Stage | Summary | Verdict / Route | Search Tags |
 |---|---|---|---|---|
 | `framework/2026-06-17_instagram_reel_intake_evidence_standard.md` | Framework / Intake Evidence Standard | Defines evidence tiers and fields Intake should ideally capture for Instagram Reels before routing. | Use as the evidence standard behind the adopted Instagram Reel upload workflow; future scraper replacements should compare against this standard. | Instagram, Reel, Intake evidence, screen recording, Apify, scraper, comments, creator metadata, engagement, legitimacy, evidence bundle |
+| `framework/2026-10-12_pattern_synthesis_trigger_and_cross_lane_sweep.md` | Framework / Intake Rule | Defines the in-chat Pattern Synthesis Trigger for recurring concepts and the weekly Cross-Lane Synthesis Sweep for non-obvious connections across Lab lanes. | Adopt as the primary recurrence/synthesis rule; scheduled sweep is backup and creative recombination, not the main Intake interface. | pattern synthesis, cross-lane synthesis, concept sweep, recurring lane, Intake trigger, Framework rule, recombination, Watchlist, Incubator |
 
 ### Incubator Handoffs
 
@@ -136,6 +137,20 @@ Search cues:
 | Pending | Incubator | AI-assisted clipping testing has started from the Intake → Incubator handoff; no closeout test is indexed yet. | Start with platform audit and risk checklist before any posting. | clipping, AI-assisted clipping, Whop, Content Rewards, Bounty, Cryo.ai, creator economy, campaign audit, real-world test |
 
 ## Current Decision Index
+
+### Pattern Synthesis Trigger and Cross-Lane Sweep
+
+Decision: The Lab should use a two-layer synthesis system.
+
+1. **In-chat Pattern Synthesis Trigger** — primary mechanism. When Intake receives the third or later item in a recurring concept lane, pause and synthesize the lane before final routing.
+2. **Weekly Cross-Lane Synthesis Sweep** — secondary backup. Look for non-obvious connections across tools, Reels, repos, workflows, and project lanes that may not have been obvious during first-pass Intake.
+
+Use this decision when routing future recurring ideas:
+
+- Obvious recurrence during active work: synthesize immediately in Intake.
+- Non-obvious cross-lane connections: let the scheduled sweep surface candidates.
+- Strong repeated pattern with useful proof: consider Incubator or Existing Project Handoff.
+- Weak repetition with no proof: Pattern Bank or Watchlist only.
 
 ### Parse / Indeed / Apify Job Search Tool Stack
 
