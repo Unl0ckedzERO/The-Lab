@@ -45,6 +45,7 @@ Current operating layout:
 | LLM Council Skill Incubator | Incubator | Active lane for LLM Council / Claude Skill pressure-test experiments |
 | Memory & Organization Layer Evaluation Incubator | Incubator | Active lane for comparing GitHub-only, Airtable, Obsidian, Notion, Cognee, and MemPalace as support layers for project memory, structured tracking, retrieval, and future agent workflows |
 | AI-Assisted Clipping Incubator | Incubator | Active lane for clipping workflows, tools, platforms, strategies, campaign audits, and real-world results |
+| Incubator Reel Estate | Incubator | Active lane for conservative real-estate entry readiness, strategy comparison, financing/deal screening, and buy/wait/reject gating before property research |
 | Framework | Framework | Main system-design chat for routing, manifests, standards, and repo structure |
 
 Concluded / handoff-complete Incubator lanes:
@@ -130,6 +131,12 @@ Search cues:
 | File | Stage | Summary | Verdict / Route | Search Tags |
 |---|---|---|---|---|
 | `tests/2026-06-29_memory_organization_layer_scorecard_and_sanitized_test.md` | Incubator / Tool Comparison | Lightweight scorecard comparing GitHub-only baseline, Airtable, Obsidian, Notion, Cognee, and MemPalace, plus a narrow sanitized tracker/retrieval probe. | Keep GitHub as source of truth; test Airtable-style tracker via repo-native simulation before any external base; defer Cognee/MemPalace to later privacy/security gate. | memory layer, organization layer, structured tracker, Airtable, Obsidian, Notion, Cognee, MemPalace, agent memory |
+
+### Real Estate Entry Readiness Tests
+
+| File | Stage | Summary | Verdict / Route | Search Tags |
+|---|---|---|---|---|
+| `tests/2026-10-12_real_estate_entry_readiness_model_v1.md` | Incubator / Evidence Pass / Audit | Conservative readiness model covering capital, financing, deal economics, market, and operator readiness; defines hard gates, stress scenarios, strategy comparison, and Buy Candidate / Wait / Reject rules before listing research. | Use as the baseline model; collect user-specific inputs only in chat, then run sanitized price-band and market-level screens before any active property search. | real estate, entry readiness, FHA, house hacking, owner-occupied multifamily, ADU, room rental, underwriting, stress test, buy wait reject |
 
 ### Clipping / Creator Economy Tests
 
