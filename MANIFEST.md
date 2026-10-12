@@ -68,8 +68,8 @@ When a user asks about prior Lab work:
 
 Search cues:
 
-- Tool names: `Parse`, `Apify`, `Firecrawl`, `Browserbase`, `Indeed`, `GovernmentJobs`, `Instagram`, `Airtable`, `Obsidian`, `Notion`, `Cognee`, `MemPalace`, `Whop`, `Content Rewards`, `Bounty`, `Cryo.ai`, `CloddsBot`
-- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`, `Reel intake`, `evidence bundle`, `tool stack`, `memory layer`, `organization layer`, `structured tracker`, `agent memory`, `clipping`, `AI-assisted clipping`, `creator economy`, `campaign audit`, `AI trading terminal`, `trading agent`, `MCP trading`, `repo-only audit`, `pattern synthesis`, `cross-lane synthesis`, `concept sweep`, `recurring lane`
+- Tool names: `Parse`, `Apify`, `Firecrawl`, `Browserbase`, `Indeed`, `GovernmentJobs`, `Instagram`, `Airtable`, `Obsidian`, `Notion`, `Cognee`, `MemPalace`, `Whop`, `Content Rewards`, `Bounty`, `Cryo.ai`, `CloddsBot`, `FHA`
+- Workflow types: `scraper`, `job search`, `API`, `row extraction`, `market sizing`, `handoff`, `rubric`, `routing`, `Reel intake`, `evidence bundle`, `tool stack`, `memory layer`, `organization layer`, `structured tracker`, `agent memory`, `clipping`, `AI-assisted clipping`, `creator economy`, `campaign audit`, `AI trading terminal`, `trading agent`, `MCP trading`, `repo-only audit`, `pattern synthesis`, `cross-lane synthesis`, `concept sweep`, `recurring lane`, `real estate`, `house hacking`, `owner-occupied multifamily`, `entry readiness`, `property underwriting`, `buy wait reject`
 - Project zones: `Intake`, `Incubator`, `Framework`, `Archive`, `Job Search`, `Trading`
 - Outcome terms: `watchlist`, `tool stack`, `dedicated experiment`, `existing project handoff`, `pattern bank`, `closeout`
 
@@ -101,6 +101,7 @@ Search cues:
 | `handoffs/2026-06-27_incubator_to_job_search_parse_indeed_api_tool_stack.md` | Incubator → Job Search Handoff | Handoff for the adopted layered Indeed data-source stack. | Adopt for Job Search; reopen Incubator only for major source, pricing, endpoint, or output-shape changes. | Indeed, Parse, Apify, connector, Job Search, tool stack, handoff, closeout |
 | `handoffs/2026-06-29_intake_to_incubator_memory_organization_layer_evaluation.md` | Intake → Incubator Handoff | Handoff for comparing GitHub-only, Airtable, Obsidian, Notion, Cognee, and MemPalace as memory/organization support layers. | Start as bounded Incubator comparison; GitHub remains the durable ledger unless Framework later changes that. | memory layer, organization layer, Airtable, Obsidian, Notion, Cognee, MemPalace, agent memory, Incubator |
 | `handoffs/2026-07-03_intake_to_incubator_ai_assisted_clipping_workflows.md` | Intake → Incubator Handoff | Handoff for testing AI-assisted clipping workflows, tools, platforms, strategies, and real-world results as digital deliverables. | Start with platform audit and risk checklist before posting; Whop / Content Rewards is the first suggested surface. | clipping, AI-assisted clipping, Whop, Content Rewards, Bounty, Cryo.ai, creator economy, campaign audit, Incubator |
+| `handoffs/2026-10-12_intake_to_incubator_real_estate_entry_readiness.md` | Intake → Incubator Handoff | Handoff for building a conservative Real Estate Entry Readiness Model and comparing viable entry strategies before any active property search. | Start with readiness, financing, underwriting, market, and operator thresholds; FHA house hacking is the first evidence item, not the thesis. | real estate, FHA, house hacking, owner-occupied multifamily, property underwriting, entry readiness, buy wait reject, Incubator |
 
 ### Existing Project Handoffs
 
