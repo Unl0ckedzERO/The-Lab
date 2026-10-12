@@ -19,6 +19,7 @@ The chat map is structural context only. Raw tests, datasets, private links, and
 | LLM Council Skill Incubator | Incubator | Active incubator lane for the LLM Council / Claude Skill pressure-test idea | Handles bounded tests of whether a council-style critique pass improves Lab routing decisions without overbuilding Intake. |
 | Memory & Organization Layer Evaluation Incubator | Incubator | Active incubator lane for comparing GitHub-only, Airtable, Obsidian, Notion, Cognee, and MemPalace | Starts with a lightweight scorecard and one narrow sanitized tracker/retrieval test; GitHub remains the durable source of truth unless Framework changes that. |
 | AI-Assisted Clipping Incubator | Incubator | Active incubator lane for clipping workflows, tools, platforms, strategies, and real-world results | Starts with platform audit and risk checklist before posting; Whop / Content Rewards is the first suggested surface. |
+| Incubator Reel Estate | Incubator | Active lane for conservative real-estate entry readiness, strategy comparison, and buy/wait/reject gating before property research | Starts with capital, financing, deal economics, market, and operator readiness; property listings are gated until readiness is proven. |
 | Framework | Framework | Main system-design chat for The Lab | Owns routing rules, naming rules, manifests, handoff standards, rubrics, thresholds, and repo structure. |
 
 ## Concluded / Handoff-Complete Incubator Chats
@@ -50,11 +51,12 @@ Do not use Framework for:
 
 ## Current Incubator Chats
 
-The Lab currently has three active Incubator chats:
+The Lab currently has four active Incubator chats:
 
 1. LLM Council Skill Incubator
 2. Memory & Organization Layer Evaluation Incubator
 3. AI-Assisted Clipping Incubator
+4. Incubator Reel Estate
 
 Instagram Reel Scraper Incubator is no longer an active test lane; its result is now an Intake upload workflow. Reopen or create a new bounded Incubator test only if the workflow fails, a scraper replacement is being compared, or the evidence standard needs a major revision.
 
